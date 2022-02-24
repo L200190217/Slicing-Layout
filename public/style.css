@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tombol {
+    background-color: #FF86A3;
+     width: 250px;
+     /* width: 70%; */
+     height: 50px;
+     border: none;
+     border-radius: 25px;
+     color: rgb(255, 255, 255);
+}
+.tombol-explore {
+    background-color: white;
+     width: 120px;
+     height: 50px;
+     border: solid 2px;
+     border-color: #EBEAED;
+     border-radius: 25px;
+     color: rgb(0, 0, 0);
+}
+.cat img{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+body{
+    margin: 0;
+}
+
+.service .icon{
+    font-size: 3em;
+}
+
+.container{
+    display: grid;
+    gap: 10px;
+}
+
+/* Navigasi */
+.menu{
+    position: relative;
+    order: -1;
+}
+
+.menu ul{
+    /* display: grid; */
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    gap: 5px;
+    text-align: center;
+}
+
+/* Baruuuuuu */
+/* Hamburger Menu  */
+.menu-toggle {
+    display: none; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 20px; 
+    position: relative;
+    z-index: 999;
+}
+
+.menu-toggle span {
+    display: block; 
+    width: 28px;
+    height: 4px;
+    background: #aaa;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.menu-toggle input {
+    display: block;
+    position: absolute;
+    background-color: black;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+/* akhir Baruuuuuu */
+
+/* services */
+/* .services{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.service{
+    background-color: white;
+    padding: 15px;
+    
+    width: 75%;
+} */
+.services {
+    position: relative;
+}
+
+.services .bg-1{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.services .bg-2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40%;
+    z-index: -1;
+}
+
+.service img.il-hero{
+    position: relative;
+    height: 300px;
+}
+
+.service img.mask{
+    position: relative;
+    height: 210px;
+    padding: 10px;
+}
+
+/* Responsive Breakpoint */
+@media (max-width: 1200px){
+    .menu{
+        order: inherit;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* untuk mobile */
+@media (max-width: 768px){
+    /* awal agar menu pindah kekanan atas */
+    .menu {
+        order: -1;
+        justify-items: end;
+    }
+    /* akhir agar menu pindah kekanan atas */
+    .menu-toggle {
+        display: flex;
+    }
+    .menu ul {
+        display: flex;
+        position: absolute;
+        left: 0;
+        height: 100vh;
+        top: 0;
+        background-color: black;
+        width: 80%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 1;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: all 1s;
+    }
+    .menu ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .cat img{
+        z-index: -9;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .tombol {
+    margin-left: 10px;
+     width: 70%;
+     height: 50px;
+     border: none;
+     border-radius: 25px;
+     color: rgb(255, 255, 255);
+    }
+
+    /* .service img{
+    display:none;visibility:hidden; 
+    } */
+     .services{
+    width: 100%;
+    }  
+    .judul{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px){
+    body{
+        margin: 0;
+    }
+    .services .row{
+        flex-direction: column-reverse;
+    }
+    
+    .services h1{
+    position: relative;
+    margin-top: 20px;
+}
+}
