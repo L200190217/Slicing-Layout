@@ -56,12 +56,11 @@
 
 
 <!-- <div class="bacground"> -->
-<section class="portfolio2 pb-4">
+<section class="portfolio2 pb-4 mt-4" style="background-color: #F3FFFC;">
     <div class="container">
-
-        <!-- <div class="bg-3">
-            <img src="image/Rectangle 1.svg">
-        </div> -->
+        <div class="cat2">
+            <img src="image/Cat Paw2.svg" style="height: 200px;">
+        </div>
 
         <div class="row text-center pt-4 mb-4">
             <div class="col-lg-12 mt-5">
@@ -142,7 +141,9 @@
 
 <section class="portfolio2 pb-4">
     <div class="container">
-
+        <div class="Group">
+            <img src="image/Group.svg" style="height: 200px;">
+        </div>
         <div class="row text-center pt-4 mb-4">
             <div class="col-lg-12 mt-5">
                 <h1>Berlangganan Sebulan Cuma Seharga Segelas Kopi</h1>

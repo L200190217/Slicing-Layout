@@ -176,6 +176,10 @@ body{
         right: 0;
         top: 0;
     }
+.cat2 img{
+        position: absolute;
+        right: 0;
+    }
 
 /* halaman feature akhir */
 
@@ -202,20 +206,10 @@ body{
     background-color: #F3FFFC;
 
 }
-.cat img{
-         z-index: -9; 
+.Group img{
+         z-index: -1; 
         position: absolute;
         left: 0;
-        top: 0;
-    }
-.bg-3 img{
-         z-index: -19; 
-        position: absolute;
-        right: 0;
-        left: 0;
-        top: 0;
-        height: 100%;
-
     }
 
 .kiri{
