@@ -129,6 +129,10 @@ body{
     position: relative;
 }
 
+.services2 {
+    position: relative;
+}
+
 .services .bg-1{
     position: absolute;
     right: 0;
@@ -136,7 +140,7 @@ body{
     z-index: -1;
 }
 
-.services .bg-2{
+.services2 .bg-2{
     position: absolute;
     left: 0;
     top: 0;
@@ -149,11 +153,115 @@ body{
     height: 300px;
 }
 
-.service img.mask{
+.service2 img.mask{
     position: relative;
-    height: 210px;
-    padding: 10px;
+    width: 100%;
+    /* padding: 10px; */
 }
+
+/* halaman feature awal */
+.icon{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: red;
+}
+.bacground{
+    background-color: #F3FFFC;
+
+}
+.cat img{
+         z-index: -9; 
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+/* halaman feature akhir */
+
+
+/* halaman pricing awal */
+.tombol-star {
+    background-color: white;
+     width: 200px;
+     height: 50px;
+     padding: 9px;
+     margin: auto;
+     border: solid 2px;
+     border-color: #EBEAED;
+     border-radius: 25px;
+     color: #35354C;
+}
+.icon{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: red;
+}
+.bacground{
+    background-color: #F3FFFC;
+
+}
+.cat img{
+         z-index: -9; 
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+.bg-3 img{
+         z-index: -19; 
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        height: 100%;
+
+    }
+
+.kiri{
+    display:inline-block;
+    margin-bottom:-0.3em;
+    vertical-align:-0.4em;
+    line-height:1.0em;
+    font-size:80%;
+    text-align:right; 
+}
+.kanan{
+    display:inline-block;
+    margin-bottom:-0.3em;
+    vertical-align:-0.4em;
+    line-height:1.0em;
+    font-size:80%;
+    text-align:left
+}
+.rp{
+    font-size:20px;
+    line-height:100px;
+    vertical-align:15px
+}
+.angka{
+    font-size:60px;
+    font-weight: 600;
+    margin: 16px;
+}
+
+.Hzx{
+    font-size:16px;
+    line-height:15px;
+    vertical-align:2px;
+    
+}
+.Hzy{
+    font-size:16px;
+}
+
+.color{
+    color: #5B5B7F;
+}
+
+/* halaman pricing akhir */
+
+
 
 /* Responsive Breakpoint */
 @media (max-width: 1200px){
@@ -216,6 +324,9 @@ body{
      .services{
     width: 100%;
     }  
+     .services2{
+    width: 100%;
+    } 
     .judul{
         margin-bottom: 20px;
     }
@@ -228,8 +339,15 @@ body{
     .services .row{
         flex-direction: column-reverse;
     }
+    .services2 .row{
+        flex-direction: column;
+    }
     
     .services h1{
+    position: relative;
+    margin-top: 20px;
+}
+.services2 h1{
     position: relative;
     margin-top: 20px;
 }
