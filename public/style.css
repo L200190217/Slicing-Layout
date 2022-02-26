@@ -256,6 +256,101 @@ body{
 /* halaman pricing akhir */
 
 
+/* halaman testimoni awal */
+
+/* halaman testimoni akhir */
+
+
+
+
+/* halaman kontak awal */
+
+.tulisan_login{
+	text-align: center;
+	/*membuat semua huruf menjadi kapital*/
+	text-transform: uppercase;
+}
+
+.kotak_login{
+	width: 350px;
+	background: white;
+    font-weight: bold;
+	/*meletakkan form ke tengah*/
+	/* margin: 80px auto;
+	padding: 30px 20px; */
+}
+
+label{
+	font-size: 11pt;
+}
+
+.form_login{
+	/*membuat lebar form penuh*/
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+	border-radius: 100px;
+	border-color: #EBEAED ;
+	border-style:solid;
+	margin-top: 8px;
+	padding-left: 15px;
+}
+
+.form_pesan{
+	/*membuat lebar form penuh*/
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	padding-bottom: 110px;
+	height: 145px;
+	border-color: #EBEAED ;
+	border-style:solid;
+	margin-top: 8px;
+	padding-left: 15px;
+}
+
+.form_nama{
+	/*membuat lebar form penuh*/
+	box-sizing : border-box;
+	width: 70%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+	border-radius: 100px;
+	border-color: #EBEAED ;
+	border-style:solid;
+	margin-top: 8px;
+	padding-left: 15px;
+}
+
+.tombol_send{
+	background: #41D8BB;
+	color: white;
+	font-size: 11pt;
+	width: 25%;
+	border: none;
+	border-radius: 100px;
+	padding: 10px 20px;
+	height: 43px;
+	margin-left: 10px;
+}
+
+.font-judul-kontak{
+    font-weight: bold;
+}
+
+.Group-kaki-cat{
+    position: absolute;
+    right: 0;
+}
+
+/* halaman kontak akhir */
+
 
 /* Responsive Breakpoint */
 @media (max-width: 1200px){

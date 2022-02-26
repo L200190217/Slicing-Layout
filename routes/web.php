@@ -35,6 +35,15 @@ Route::get('/', function () {
 
         "berlangganan1" => "All the features you need to keep your personal files safe, accessible, and easy to share.",
         "berlangganan2" => "All the features you need to keep your personal files safe, accessible, and easy to share.",
-        "berlangganan3" => "All the features you need to keep your personal files safe, accessible, and easy to share."
+        "berlangganan3" => "All the features you need to keep your personal files safe, accessible, and easy to share.",
+        "nomer" => "+62 821-1244-20870",
+        "email" => "contact@tupaitech.net"
+        // "nomer" => "+62 821-1244-20870",
+        // "nomer" => "+62 821-1244-20870",
+        // "nomer" => "+62 821-1244-20870",
+        // "nomer" => "+62 821-1244-20870",
+        // "nomer" => "+62 821-1244-20870",
+        // "nomer" => "+62 821-1244-20870"
+
     ]);
 });
